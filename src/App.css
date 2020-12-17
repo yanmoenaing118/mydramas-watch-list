@@ -1,38 +1,22 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400&display=swap");
+
+:root {
+  --primary-color: #41bd42;
+
+  --white: #fff;
+  --color-gray-0: #fbfbfb;
+  --color-gray-1: #f4f5f7;
+  --color-gray-2: #eaecef;
+  --color-gray-3: #373e34;
+
+  --primary-font: sans-serif;
+  --secondary-font: serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--primary-font);
+  line-height: 1.7;
 }

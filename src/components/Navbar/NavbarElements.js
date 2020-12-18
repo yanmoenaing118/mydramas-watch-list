@@ -8,7 +8,7 @@ export const Nav = styled.nav`
   align-items: center;
   justify-content: center;
   height: 70px;
-  /* margin-top: -100px; */
+  margin-top: -100px;
   position: sticky;
   top: 0;
   width: 100%;

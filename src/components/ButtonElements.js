@@ -24,7 +24,8 @@ export const Button = styled.a`
   }
 
   @media screen and (max-width: 480px) {
-    padding: 8px 32px;
+    padding: 8px 28px;
+    margin: 0.8px 0;
   }
 `;
 // 1 54 21

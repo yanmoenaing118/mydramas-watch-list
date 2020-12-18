@@ -1,4 +1,5 @@
 import React from "react";
+import { Fade } from "react-reveal";
 import { Button } from "./../ButtonElements";
 import {
   InfoContainer,
@@ -20,7 +21,8 @@ export default function InfoSection({
   topLine,
   headline,
   description,
-  buttonLabel,
+  buttonLabel1,
+  buttonLabel2,
   lightText,
   lightBg,
 }) {
@@ -30,7 +32,9 @@ export default function InfoSection({
         <>
           <Column1>
             <ImgWrapper>
-              <Img src={img} />
+              <Fade left>
+                <Img src={img} />
+              </Fade>
             </ImgWrapper>
           </Column1>
           <Column2>
@@ -38,7 +42,8 @@ export default function InfoSection({
             <Heading lightText={lightText ? 1 : 0}>{headline}</Heading>
             <Subtitle lightText={lightText ? 1 : 0}>{description}</Subtitle>
             <BtnWrap>
-              <Button primary={true}>{buttonLabel}</Button>
+              <Button primary={true}>{buttonLabel1}</Button>
+              <Button primary={true}>{buttonLabel2}</Button>
             </BtnWrap>
           </Column2>
         </>
@@ -51,12 +56,15 @@ export default function InfoSection({
             <Heading lightText={lightText ? 1 : 0}>{headline}</Heading>
             <Subtitle lightText={lightText ? 1 : 0}>{description}</Subtitle>
             <BtnWrap>
-              <Button primary={true}>{buttonLabel}</Button>
+              <Button primary={true}>{buttonLabel1}</Button>
+              <Button primary={true}>{buttonLabel2}</Button>
             </BtnWrap>
           </Column1>
           <Column2>
             <ImgWrapper>
-              <Img src={img} />
+              <Fade right>
+                <Img src={img} />
+              </Fade>
             </ImgWrapper>
           </Column2>
         </>

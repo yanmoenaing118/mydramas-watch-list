@@ -1,6 +1,8 @@
 import React from "react";
+import { Fade } from "react-reveal";
 import { Button } from "../ButtonElements";
 import Video from "./../../videos/video 2.mp4";
+
 import {
   HeroContainer,
   HeroBg,
@@ -20,11 +22,15 @@ export default function HeroSection() {
         </VideoBg>
       </HeroBg>
       <HeroContent>
-        <HeroH1>The Dramas I have watched</HeroH1>
+        <HeroH1>
+          <Fade top>The Dramas I have watched</Fade>
+        </HeroH1>
         <HeroP>
-          I have been drugged down into the world of asian dramas since the
-          start of Covid-19. Since then, I have watched a lot of dramas from
-          South Korea, China (mostly ancient dramas) and Thailand.
+          <Fade bottom>
+            I have been drugged down into the world of asian dramas since the
+            start of Covid-19. Since then, I have watched a lot of dramas from
+            South Korea, China (mostly ancient dramas) and Thailand.
+          </Fade>
         </HeroP>
         <HeroBtnWrapper>
           <Button primary big bigFont>

@@ -43,17 +43,25 @@ export const InfoRow = styled.div`
 
 export const Column1 = styled.div`
   grid-area: col1;
+  padding: 0 24px;
+  @media screen and (max-width: 768px) {
+    padding: 0;
+  }
 `;
 
 export const Column2 = styled.div`
   grid-area: col2;
+  padding: 0 24px;
+  @media screen and (max-width: 768px) {
+    padding: 0;
+  }
 `;
 
 export const ImgWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-
+  position: relative;
   height: 100%;
 `;
 
@@ -92,12 +100,12 @@ export const Heading = styled.h1`
     lightText ? "var(--color-gray-0)" : "var(--color-gray-3)"};
 
   @media screen and (max-width: 768px) {
-    font-size: 32px;
+    font-size: 30px;
     margin-bottom: 24px;
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 28px;
+    font-size: 24px;
     margin-bottom: 24px;
   }
 `;
@@ -108,9 +116,17 @@ export const Subtitle = styled.p`
   font-size: 18px;
   line-height: 1.7;
   letter-spacing: 0.3px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 15px;
+  }
 `;
 
 export const BtnWrap = styled.div`
   margin-top: 38px;
   margin-bottom: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 `;

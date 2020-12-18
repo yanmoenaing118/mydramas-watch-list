@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const HeroContainer = styled.section`
   position: relative;
   z-index: 1;
-  height: 800px;
+  height: 760px;
   display: flex;
   flex-direction: column;
   /* align-items: center; */
@@ -42,6 +42,7 @@ export const VideoBg = styled.video`
 `;
 
 export const HeroContent = styled.div`
+  position: relative;
   padding: 0 24px;
   display: flex;
   flex-direction: column;
@@ -71,6 +72,7 @@ export const HeroP = styled.p`
   margin-top: 24px;
   margin-left: 24px;
   font-size: 28px;
+  position: relative;
   @media screen and (max-width: 768px) {
     font-size: 24px;
   }

@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <>
-      <Sidebar isOpen={openSidebar} />
+      <Sidebar isOpen={openSidebar} toggleSidebar={toggleSidebar} />
       <Navbar toggleSidebar={toggleSidebar} isOpen={openSidebar} />
       <HeroSection />
       <InfoSection {...homeObject} />

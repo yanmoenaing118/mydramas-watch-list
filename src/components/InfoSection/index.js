@@ -14,6 +14,7 @@ import {
   Subtitle,
 } from "./InfoElements";
 export default function InfoSection({
+  id,
   img,
   imgStart,
   topLine,
@@ -63,7 +64,7 @@ export default function InfoSection({
     }
   };
   return (
-    <InfoContainer lightBg={lightBg ? 1 : 0}>
+    <InfoContainer id={id} lightBg={lightBg ? 1 : 0}>
       <InfoWrapper>
         <InfoRow>{renderCols()}</InfoRow>
       </InfoWrapper>

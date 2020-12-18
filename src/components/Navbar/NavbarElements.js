@@ -1,15 +1,14 @@
 import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
-import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
   font-family: var(--secondary-font);
-  /* background-color: var(--primary-color); */
+  background-color: var(--primary-color);
   display: flex;
   align-items: center;
   justify-content: center;
   height: 70px;
-  margin-top: -100px;
+  /* margin-top: -100px; */
   position: sticky;
   top: 0;
   width: 100%;
@@ -29,7 +28,7 @@ export const NavContainer = styled.div`
   justify-content: space-between;
 `;
 
-export const NavLogo = styled(LinkS)`
+export const NavLogo = styled.a`
   text-decoration: none;
   color: var(--white);
   display: flex;
@@ -89,7 +88,7 @@ export const NavItem = styled.li`
   margin-bottom: -4px;
 `;
 
-export const NavLink = styled(LinkS)`
+export const NavLink = styled.a`
   color: var(--white);
   font-size: 1rem;
   font-weight: 600;
@@ -126,7 +125,7 @@ export const Signin = styled(LinkR)`
   text-decoration: none;
   padding: 8px 36px;
   border-radius: 5px;
-  background-color: var(--primary-color);
-  color: var(--white);
+  background-color: var(--color-gray-0);
+  color: var(--color-gray-3);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 `;

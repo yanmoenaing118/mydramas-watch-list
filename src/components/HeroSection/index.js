@@ -13,7 +13,7 @@ import {
 
 export default function HeroSection() {
   return (
-    <HeroContainer>
+    <HeroContainer id="home">
       <HeroBg>
         <VideoBg autoPlay loop>
           <source src={Video} type="video/mp4" />

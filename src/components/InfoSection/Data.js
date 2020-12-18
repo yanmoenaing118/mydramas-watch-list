@@ -1,5 +1,5 @@
 export const homeObject = {
-  id: "about",
+  id: "korean",
   lightBg: false,
   lightText: true,
   darkText: false,
@@ -14,7 +14,7 @@ export const homeObject = {
 };
 
 export const homeObjectTwo = {
-  id: "about",
+  id: "chinese",
   lightBg: true,
   darkText: true,
   lightText: false,
@@ -29,7 +29,7 @@ export const homeObjectTwo = {
 };
 
 export const homeObjectThree = {
-  id: "about",
+  id: "thai",
   lightBg: false,
   lightText: true,
   lightTextDesc: true,

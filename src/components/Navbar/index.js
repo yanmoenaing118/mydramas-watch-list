@@ -16,7 +16,7 @@ const Navbar = ({ toggleSidebar, isOpen }) => {
   return (
     <Nav>
       <NavContainer>
-        <NavLogo to="home">dramas</NavLogo>
+        <NavLogo href="/#home">dramas</NavLogo>
         <MobileIcon onClick={toggleSidebar}>
           {isOpen ? (
             <AiOutlineClose size="22px" />
@@ -26,23 +26,23 @@ const Navbar = ({ toggleSidebar, isOpen }) => {
         </MobileIcon>
         <NavMenu>
           <NavItem>
-            <NavLink to="/about">Korean</NavLink>
+            <NavLink href="/#korean">Korean</NavLink>
           </NavItem>
 
           <NavItem>
-            <NavLink to="/discover">Chinese</NavLink>
+            <NavLink href="/#chinese">Chinese</NavLink>
           </NavItem>
 
           <NavItem>
-            <NavLink to="/services">Thailand</NavLink>
+            <NavLink href="/#thai">Thailand</NavLink>
           </NavItem>
 
           <NavItem>
-            <NavLink to="/about">About</NavLink>
+            <NavLink href="/#drmas">Dramas</NavLink>
           </NavItem>
         </NavMenu>
         <NavBtn>
-          <Signin to="/signin">Sign in</Signin>
+          <Signin href="/signin">Sign in</Signin>
         </NavBtn>
       </NavContainer>
     </Nav>

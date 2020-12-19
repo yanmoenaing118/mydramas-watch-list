@@ -1,7 +1,7 @@
 import React from "react";
 import { Fade } from "react-reveal";
 import { Button } from "../ButtonElements";
-import Video from "./../../videos/video 2.mp4";
+import Video from "./../../videos/lar.webm";
 
 import {
   HeroContainer,
@@ -18,7 +18,7 @@ export default function HeroSection() {
     <HeroContainer id="home">
       <HeroBg>
         <VideoBg autoPlay loop>
-          <source src={Video} type="video/mp4" />
+          <source src={Video} type="video/webm" />
         </VideoBg>
       </HeroBg>
       <HeroContent>

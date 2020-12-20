@@ -21,7 +21,7 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
           <SidebarLink href="/#thai" onClick={() => toggleSidebar()}>
             Thailand
           </SidebarLink>
-          <SidebarLink href="/#about" onClick={() => toggleSidebar()}>
+          <SidebarLink href="/#dramas" onClick={() => toggleSidebar()}>
             About
           </SidebarLink>
         </SidebarMenu>

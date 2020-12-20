@@ -15,7 +15,7 @@ export const Nav = styled.nav`
   width: 100%;
   z-index: 999;
   box-shadow: ${({ isTransparent }) =>
-    isTransparent
+    !isTransparent
       ? "0 3px 5px rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.2)"
       : "none"};
 

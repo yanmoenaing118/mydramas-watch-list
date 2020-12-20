@@ -22,7 +22,7 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
             Thailand
           </SidebarLink>
           <SidebarLink href="/#dramas" onClick={() => toggleSidebar()}>
-            About
+            Dramas
           </SidebarLink>
         </SidebarMenu>
         <SidebarBtnWrapper>

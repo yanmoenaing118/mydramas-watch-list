@@ -3,7 +3,8 @@ import { Link as LinkR } from "react-router-dom";
 
 export const Nav = styled.nav`
   font-family: var(--secondary-font);
-  background-color: var(--primary-color);
+  background-color: ${({ isTransparent }) =>
+    isTransparent ? "transparent" : "var(--primary-color)"};
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,6 +19,7 @@ export const Nav = styled.nav`
   @media screen and (max-width: 768px) {
     height: 60px;
   }
+  transition: all 0.3s ease-in-out;
 `;
 
 export const NavContainer = styled.div`
@@ -124,8 +126,7 @@ export const NavBtn = styled.div`
 export const Signin = styled(LinkR)`
   text-decoration: none;
   padding: 8px 36px;
-  border-radius: 5px;
-  background-color: var(--color-gray-0);
-  color: var(--color-gray-3);
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+
+  color: var(--color-gray-0);
+  border: 3px solid var(--primary-color);
 `;

@@ -27,7 +27,7 @@ export default function Dramas() {
               <DramaSubtitle>
                 The stories and the plots are really awesome.
               </DramaSubtitle>
-              <DramaLink to="/dramas/kdramas">View Kdramas</DramaLink>
+              <DramaLink to="/dramas/kdramas">see korean dramas</DramaLink>
             </DramaCard>
           </Fade>
 
@@ -38,7 +38,7 @@ export default function Dramas() {
               <DramaSubtitle>
                 The romance between the casts is far beyond anything.
               </DramaSubtitle>
-              <DramaLink to="/dramas/cdramas">View Kdramas</DramaLink>
+              <DramaLink to="/dramas/cdramas">see chinese dramas</DramaLink>
             </DramaCard>
           </Fade>
 
@@ -49,7 +49,7 @@ export default function Dramas() {
               <DramaSubtitle>
                 The stories and the plots are really awesome.
               </DramaSubtitle>
-              <DramaLink to="/dramas/tdramas">View Kdramas</DramaLink>
+              <DramaLink to="/dramas/tdramas">View Thai dramas</DramaLink>
             </DramaCard>
           </Fade>
         </DramaItems>

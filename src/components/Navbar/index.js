@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import {
   Nav,
@@ -13,8 +13,17 @@ import {
 } from "./NavbarElements";
 
 const Navbar = ({ toggleSidebar, isOpen }) => {
+  const [transparent, setTransparent] = useState(true);
+  const handleNavbar = (e) => {
+    if (window.scrollY > 240) {
+      setTransparent(false);
+    } else {
+      setTransparent(true);
+    }
+  };
+  window.addEventListener("scroll", handleNavbar);
   return (
-    <Nav>
+    <Nav isTransparent={transparent}>
       <NavContainer>
         <NavLogo href="/#home">dramas</NavLogo>
         <MobileIcon onClick={toggleSidebar}>
@@ -42,7 +51,7 @@ const Navbar = ({ toggleSidebar, isOpen }) => {
           </NavItem>
         </NavMenu>
         <NavBtn>
-          <Signin href="/signin">Sign in</Signin>
+          <Signin to="/signin">Sign in</Signin>
         </NavBtn>
       </NavContainer>
     </Nav>

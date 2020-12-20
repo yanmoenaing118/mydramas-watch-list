@@ -60,9 +60,20 @@ export const DramaCard = styled.div`
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 
   &:hover > a {
-    transform: scale(1.2);
-    text-decoration: underline;
+    background-color: rgba(0, 225, 0, 0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: var(--color-gray-3);
   }
+`;
+
+export const DramaLink = styled(Link)`
+  margin-top: 1rem;
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: all 0.1s ease-in-out;
+  padding: 0.8rem;
+  border-radius: 4px;
+  display: block;
 `;
 
 export const DramaIcon = styled.img`
@@ -89,11 +100,4 @@ export const DramaSubtitle = styled.p`
   @media screen and (max-width: 480px) {
     font-size: 0.9rem;
   }
-`;
-
-export const DramaLink = styled(Link)`
-  margin-top: 1rem;
-  text-decoration: none;
-  color: var(--primary-color);
-  transition: transform 0.1s ease-in-out;
 `;

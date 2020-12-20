@@ -1,12 +1,9 @@
 import React from "react";
 import { Fade } from "react-reveal";
 import { Button } from "../ButtonElements";
-import Video from "./../../videos/lar.webm";
 
 import {
   HeroContainer,
-  HeroBg,
-  VideoBg,
   HeroContent,
   HeroH1,
   HeroP,
@@ -16,14 +13,9 @@ import {
 export default function HeroSection() {
   return (
     <HeroContainer id="home">
-      <HeroBg>
-        <VideoBg autoPlay loop>
-          <source src={Video} type="video/webm" />
-        </VideoBg>
-      </HeroBg>
       <HeroContent>
         <HeroH1>
-          <Fade top>The Dramas I have watched</Fade>
+          <Fade top>What is this?</Fade>
         </HeroH1>
         <HeroP>
           <Fade bottom>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Fade } from "react-reveal";
 import { Button } from "./../ButtonElements";
 import {
@@ -26,6 +26,7 @@ export default function InfoSection({
   lightText,
   lightBg,
 }) {
+  const [myspy, setMyspy] = useState(false);
   const renderCols = () => {
     if (imgStart) {
       return (
@@ -43,7 +44,6 @@ export default function InfoSection({
             <Subtitle lightText={lightText ? 1 : 0}>{description}</Subtitle>
             <BtnWrap>
               <Button primary={true}>{buttonLabel1}</Button>
-              <Button primary={true}>{buttonLabel2}</Button>
             </BtnWrap>
           </Column2>
         </>
@@ -57,7 +57,6 @@ export default function InfoSection({
             <Subtitle lightText={lightText ? 1 : 0}>{description}</Subtitle>
             <BtnWrap>
               <Button primary={true}>{buttonLabel1}</Button>
-              <Button primary={true}>{buttonLabel2}</Button>
             </BtnWrap>
           </Column1>
           <Column2>
@@ -73,7 +72,7 @@ export default function InfoSection({
   };
   return (
     <InfoContainer id={id} lightBg={lightBg ? 1 : 0}>
-      <InfoWrapper>
+      <InfoWrapper onMouseEnter={(e) => setMyspy(!myspy)}>
         <InfoRow>{renderCols()}</InfoRow>
       </InfoWrapper>
     </InfoContainer>

@@ -11,7 +11,7 @@ export const homeObject = {
   buttonLabel1: "watch on viki",
   buttonLabel2: "see kdramas",
   imgStart: false,
-  img: require("./../../images/cloy-bg.jpg").default,
+  img: require("./../../images/cloy.jpg").default,
 };
 
 export const homeObjectTwo = {

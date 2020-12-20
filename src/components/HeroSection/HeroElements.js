@@ -1,4 +1,5 @@
 import styled from "styled-components";
+const bgImage = require("./../../images/lar.jpeg").default;
 
 export const HeroContainer = styled.section`
   position: relative;
@@ -8,7 +9,10 @@ export const HeroContainer = styled.section`
   flex-direction: column;
   /* align-items: center; */
   justify-content: center;
-
+  background-image: url(${bgImage});
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
   &::before {
     content: "";
     position: absolute;
@@ -24,21 +28,6 @@ export const HeroContainer = styled.section`
       rgba(0, 0, 0, 0.6) 100%
     );
   }
-`;
-
-export const HeroBg = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-`;
-
-export const VideoBg = styled.video`
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 `;
 
 export const HeroContent = styled.div`

@@ -38,7 +38,7 @@ const Navbar = ({ toggleSidebar, isOpen }) => {
           </NavItem>
 
           <NavItem>
-            <NavLink href="/#drmas">Dramas</NavLink>
+            <NavLink href="/#dramas">Dramas</NavLink>
           </NavItem>
         </NavMenu>
         <NavBtn>

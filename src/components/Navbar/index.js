@@ -15,7 +15,7 @@ import {
 const Navbar = ({ toggleSidebar, isOpen }) => {
   const [transparent, setTransparent] = useState(true);
   const handleNavbar = (e) => {
-    if (window.scrollY > 240) {
+    if (window.scrollY > 200) {
       setTransparent(false);
     } else {
       setTransparent(true);

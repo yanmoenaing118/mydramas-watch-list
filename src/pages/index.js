@@ -9,6 +9,7 @@ import {
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import DramasSection from "../components/DramasSection";
+
 export default function Home() {
   const [openSidebar, setOpenSidebar] = useState(false);
 

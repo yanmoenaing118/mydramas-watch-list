@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 import {
   DramasListContainer,
   DramasListWrapper,
@@ -11,7 +11,6 @@ import {
   SearchIcon,
   DramasWrapper,
   DramaCard,
-  DramaCardWrapper,
   DramaPicture,
   DramaTitle,
   DramaRating,
@@ -25,23 +24,21 @@ import {
 export default function DramasList({ title, dramas }) {
   const dramasContent = dramas.map((drama) => (
     <DramaCard>
-      <DramaCardWrapper>
-        <DramaPicture src={drama.picture} />
-        <DramaTitle>{drama.title}</DramaTitle>
-        <DramaRating>
-          <DramaRatingText>my rating</DramaRatingText>
-          <DramaRatingStars>
-            <Star size="15px" fill={1 ? "gold" : "gray"} />
-            <Star size="15px" fill={1 ? "gold" : "gray"} />
-            <Star size="15px" fill={1 ? "gold" : "gray"} />
-            <Star size="15px" fill={1 ? "gold" : "gray"} />
-            <Star size="15px" fill={1 ? "gold" : "gray"} />
-          </DramaRatingStars>
-        </DramaRating>
-        <DramaLinkWrapper>
-          <DramaLink>C-L-O-Y Details</DramaLink>
-        </DramaLinkWrapper>
-      </DramaCardWrapper>
+      <DramaPicture src={drama.picture} />
+      <DramaTitle>{drama.title}</DramaTitle>
+      <DramaRating>
+        <DramaRatingText>my rating</DramaRatingText>
+        <DramaRatingStars>
+          <Star size="15px" fill={1 ? "gold" : "gray"} />
+          <Star size="15px" fill={1 ? "gold" : "gray"} />
+          <Star size="15px" fill={1 ? "gold" : "gray"} />
+          <Star size="15px" fill={1 ? "gold" : "gray"} />
+          <Star size="15px" fill={1 ? "gold" : "gray"} />
+        </DramaRatingStars>
+      </DramaRating>
+      <DramaLinkWrapper>
+        <DramaLink>C-L-O-Y Details</DramaLink>
+      </DramaLinkWrapper>
     </DramaCard>
   ));
   return (

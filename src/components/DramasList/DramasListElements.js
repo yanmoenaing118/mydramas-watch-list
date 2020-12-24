@@ -26,11 +26,6 @@ export const BreadCampWrapper = styled.div``;
 
 export const DramasListInfoWrapper = styled.div`
   position: relative;
-  padding: 0 2.6rem;
-
-  @media screen and (max-width: 480px) {
-    padding: 0;
-  }
 `;
 
 export const DramasListH1 = styled.h1`
@@ -51,6 +46,7 @@ export const DramasListP = styled.p`
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
+  color: var(--color-gray-3);
 `;
 
 export const SearchIconWrapper = styled.div`
@@ -84,21 +80,17 @@ export const DramaCard = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  border-radius: 5px;
 
-  @media screen and (max-width: 600px) {
-    align-items: flex-start;
-  }
-`;
-
-export const DramaCardWrapper = styled.div`
   padding: 1rem;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
   background-color: var(--white);
 `;
 
 export const DramaPicture = styled.img`
-  max-width: 220px;
-  max-height: 130px;
+  width: 80%;
+  height: auto;
+  border-radius: 5px;
 `;
 
 export const DramaTitle = styled.h2`
@@ -106,19 +98,21 @@ export const DramaTitle = styled.h2`
   font-weight: bold;
   color: var(--color-gray-3);
   text-align: center;
+  margin-top: 0.6rem;
 `;
 
 export const DramaRating = styled.div`
   text-align: center;
   display: flex;
   width: 100%;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  margin: 0.8rem 0;
+  margin: 0.4rem 0;
 `;
 
 export const DramaRatingText = styled.div`
   text-transform: uppercase;
+  margin-right: 1rem;
 `;
 
 export const DramaRatingStars = styled.div``;
@@ -133,5 +127,5 @@ export const DramaLink = styled(Link)`
   text-decoration: none;
   color: var(--primary-color);
   display: block;
-  padding: 0.8rem 0;
+  padding: 0.4rem 0;
 `;

@@ -1,7 +1,7 @@
 import React from "react";
 import { Fade } from "react-reveal";
-import Icon1 from "./../../images/cloy.jpg";
-import Icon2 from "./../../images/lar.jpeg";
+import Icon1 from "./../../images/cloy-1.jpg";
+import Icon2 from "./../../images/lar-1.jpg";
 import Icon3 from "./../../images/mhil.jpg";
 import {
   DramasContainer,

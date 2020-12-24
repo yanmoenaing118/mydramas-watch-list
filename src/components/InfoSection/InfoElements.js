@@ -66,7 +66,7 @@ export const ImgWrapper = styled.div`
 `;
 
 export const Img = styled.img`
-  width: 90%;
+  width: 100%;
   height: auto;
   outline: 3px solid var(--primary-color);
   outline-offset: 24px;

@@ -2,7 +2,7 @@ export const dramas_list = {
   korean: [
     {
       title: "Crash Landing On You",
-      picture: require("./../../images/cloy.jpg").default,
+      picture: require("./../../images/cloy-1.jpg").default,
       rating: 5,
     },
     {
@@ -37,7 +37,7 @@ export const dramas_list = {
   chinese: [
     {
       title: "Love and Redemption",
-      picture: require("./../../images/lar.jpeg").default,
+      picture: require("./../../images/lar-1.jpg").default,
       rating: 5,
     },
     {

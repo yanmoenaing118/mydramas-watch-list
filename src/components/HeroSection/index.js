@@ -15,7 +15,7 @@ export default function HeroSection() {
     <HeroContainer id="home">
       <HeroContent>
         <HeroH1>
-          <Fade top>What is this?</Fade>
+          <Fade top>Drama Heaven</Fade>
         </HeroH1>
         <HeroP>
           <Fade bottom>

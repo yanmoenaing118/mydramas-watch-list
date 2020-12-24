@@ -1,31 +1,23 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { FaSearch, FaStar } from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
 
 export const DramasListContainer = styled.div`
   background-color: var(--color-gray-1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
 `;
 
 export const DramasListWrapper = styled.div`
   width: 100%;
   max-width: 1110px;
-  padding: 24px;
-
-  @media screen and (max-width: 480px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+  padding: 24px 0;
+  margin-left: auto;
+  margin-right: auto;
 `;
-
-export const BreadCampWrapper = styled.div``;
 
 export const DramasListInfoWrapper = styled.div`
   position: relative;
+  padding: 0 24px;
 `;
 
 export const DramasListH1 = styled.h1`
@@ -36,7 +28,11 @@ export const DramasListH1 = styled.h1`
   letter-spacing: 0em;
   text-align: left;
   color: var(--primary-color);
-  margin: 16px 0;
+  margin: 8px 0;
+
+  @media screen and (max-width: 480px) {
+    font-size: 32px;
+  }
 `;
 
 export const DramasListP = styled.p`
@@ -46,33 +42,20 @@ export const DramasListP = styled.p`
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
+  font-weight: normal;
   color: var(--color-gray-3);
-`;
 
-export const SearchIconWrapper = styled.div`
-  /* position: absolute;
-  right: 15px;
-  top: 0; */
-  color: var(--color-gray-3);
-  margin-top: 16px;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: var(--color-gray-2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
-export const SearchIcon = styled(FaSearch)`
-  color: currentColor;
+  @media screen and (max-width: 480px) {
+    font-size: 16px;
+  }
 `;
 
 export const DramasWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   grid-gap: 2rem;
-  margin-top: 16px;
+  margin-top: 2rem;
+  padding: 0 24px;
 `;
 
 export const DramaCard = styled.div`

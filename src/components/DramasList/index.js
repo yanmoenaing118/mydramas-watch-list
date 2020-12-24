@@ -1,14 +1,12 @@
 import React from "react";
+import { extractLink } from "../../utils/utils";
 
 import {
   DramasListContainer,
   DramasListWrapper,
-  BreadCampWrapper,
   DramasListInfoWrapper,
   DramasListH1,
   DramasListP,
-  SearchIconWrapper,
-  SearchIcon,
   DramasWrapper,
   DramaCard,
   DramaPicture,
@@ -22,39 +20,42 @@ import {
 } from "./DramasListElements";
 
 export default function DramasList({ title, dramas }) {
-  const dramasContent = dramas.map((drama) => (
-    <DramaCard>
-      <DramaPicture src={drama.picture} />
-      <DramaTitle>{drama.title}</DramaTitle>
-      <DramaRating>
-        <DramaRatingText>my rating</DramaRatingText>
-        <DramaRatingStars>
-          <Star size="15px" fill={1 ? "gold" : "gray"} />
-          <Star size="15px" fill={1 ? "gold" : "gray"} />
-          <Star size="15px" fill={1 ? "gold" : "gray"} />
-          <Star size="15px" fill={1 ? "gold" : "gray"} />
-          <Star size="15px" fill={1 ? "gold" : "gray"} />
-        </DramaRatingStars>
-      </DramaRating>
-      <DramaLinkWrapper>
-        <DramaLink>C-L-O-Y Details</DramaLink>
-      </DramaLinkWrapper>
-    </DramaCard>
-  ));
+  const dramasContent = dramas.map((drama) => {
+    let detailLink = extractLink(drama.title);
+    return (
+      <DramaCard>
+        <DramaPicture src={drama.picture} />
+        <DramaTitle>{drama.title}</DramaTitle>
+        <DramaRating>
+          <DramaRatingText>my rating</DramaRatingText>
+          <DramaRatingStars>
+            <Star size="15px" fill={1 ? "gold" : "gray"} />
+            <Star size="15px" fill={1 ? "gold" : "gray"} />
+            <Star size="15px" fill={1 ? "gold" : "gray"} />
+            <Star size="15px" fill={1 ? "gold" : "gray"} />
+            <Star size="15px" fill={1 ? "gold" : "gray"} />
+          </DramaRatingStars>
+        </DramaRating>
+        <DramaLinkWrapper>
+          <DramaLink>{detailLink} Details</DramaLink>
+        </DramaLinkWrapper>
+      </DramaCard>
+    );
+  });
   return (
-    <DramasListContainer>
-      <DramasListWrapper>
-        <BreadCampWrapper></BreadCampWrapper>
-        <DramasListInfoWrapper>
-          <DramasListH1>Korean dramas</DramasListH1>
-          <DramasListP>A list of {title} dramas I have watched</DramasListP>
-          <SearchIconWrapper>
-            <SearchIcon fill="var(--color-gray-3)" />
-          </SearchIconWrapper>
-        </DramasListInfoWrapper>
+    <>
+      <DramasListContainer>
+        <DramasListWrapper>
+          <DramasListInfoWrapper>
+            <DramasListH1>The {title} dramas</DramasListH1>
+            <DramasListP>
+              The list of {title} dramas I have watched.{" "}
+            </DramasListP>
+          </DramasListInfoWrapper>
 
-        <DramasWrapper>{dramasContent}</DramasWrapper>
-      </DramasListWrapper>
-    </DramasListContainer>
+          <DramasWrapper>{dramasContent}</DramasWrapper>
+        </DramasListWrapper>
+      </DramasListContainer>
+    </>
   );
 }

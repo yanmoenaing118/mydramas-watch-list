@@ -1,4 +1,4 @@
-export default [
+const cdramas = [
   {
     title: "Love and Redemption",
     picture: require("./../../images/lar-1.jpeg").default,
@@ -26,3 +26,5 @@ export default [
     rating: 4,
   },
 ];
+
+export default cdramas;

@@ -1,4 +1,4 @@
-export default [
+const kdramas = [
   {
     title: "Crash Landing On You",
     picture: require("./../../images/cloy-1.jpeg").default,
@@ -181,3 +181,5 @@ export default [
     rating: 5,
   },
 ];
+
+export default kdramas;

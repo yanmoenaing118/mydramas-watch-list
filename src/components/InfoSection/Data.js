@@ -11,7 +11,7 @@ export const homeObject = {
   buttonLabel1: "watch on viki",
   buttonLabel2: "see kdramas",
   imgStart: false,
-  img: require("./../../images/cloy-1.jpg").default,
+  img: require("./../../images/cloy-1.jpeg").default,
 };
 
 export const homeObjectTwo = {
@@ -27,7 +27,7 @@ export const homeObjectTwo = {
   buttonLabel1: "watch on viki",
   buttonLabel2: "see cdramas",
   imgStart: true,
-  img: require("./../../images/lar-1.jpg").default,
+  img: require("./../../images/lar-1.jpeg").default,
 };
 
 export const homeObjectThree = {
@@ -42,5 +42,5 @@ export const homeObjectThree = {
   buttonLabel1: "watch on viki",
   buttonLabel2: "see thai dramas",
   imgStart: false,
-  img: require("./../../images/mhil.jpg").default,
+  img: require("./../../images/mhil.jpeg").default,
 };

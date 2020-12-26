@@ -54,9 +54,9 @@ export const SidebarRoute = styled(LinkR)`
   text-decoration: none;
   border: none;
   background-color: var(--white);
-  border-radius: 5px;
+  border-radius: 55px;
   color: var(--primary-color);
-  padding: 16px 60px;
+  padding: 6px 42px;
   font-size: 1.6rem;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 `;

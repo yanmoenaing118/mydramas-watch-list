@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Fade } from "react-reveal";
+import { Link } from "react-router-dom";
 import { Button } from "./../ButtonElements";
 import {
   InfoContainer,
@@ -22,7 +23,7 @@ export default function InfoSection({
   headline,
   description,
   buttonLabel1,
-  buttonLabel2,
+
   lightText,
   lightBg,
 }) {
@@ -43,7 +44,9 @@ export default function InfoSection({
             <Heading lightText={lightText ? 1 : 0}>{headline}</Heading>
             <Subtitle lightText={lightText ? 1 : 0}>{description}</Subtitle>
             <BtnWrap>
-              <Button primary={true}>{buttonLabel1}</Button>
+              <Button primary={true}>
+                <Link href="/">{buttonLabel1}</Link>
+              </Button>
             </BtnWrap>
           </Column2>
         </>
@@ -56,7 +59,9 @@ export default function InfoSection({
             <Heading lightText={lightText ? 1 : 0}>{headline}</Heading>
             <Subtitle lightText={lightText ? 1 : 0}>{description}</Subtitle>
             <BtnWrap>
-              <Button primary={true}>{buttonLabel1}</Button>
+              <Button primary={true}>
+                <Link href="/">{buttonLabel1}</Link>
+              </Button>
             </BtnWrap>
           </Column1>
           <Column2>

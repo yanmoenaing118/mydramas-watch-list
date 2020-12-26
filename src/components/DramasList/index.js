@@ -1,5 +1,6 @@
 import React from "react";
 import { extractLink } from "../../utils/utils";
+import Zoom from "react-reveal/Zoom";
 
 import {
   DramasListContainer,
@@ -23,23 +24,25 @@ export default function DramasList({ title, dramas }) {
   const dramasContent = dramas.map((drama) => {
     let detailLink = extractLink(drama.title);
     return (
-      <DramaCard>
-        <DramaPicture src={drama.picture} />
-        <DramaTitle>{drama.title}</DramaTitle>
-        <DramaRating>
-          <DramaRatingText>my rating</DramaRatingText>
-          <DramaRatingStars>
-            <Star size="15px" fill={1 ? "gold" : "gray"} />
-            <Star size="15px" fill={1 ? "gold" : "gray"} />
-            <Star size="15px" fill={1 ? "gold" : "gray"} />
-            <Star size="15px" fill={1 ? "gold" : "gray"} />
-            <Star size="15px" fill={1 ? "gold" : "gray"} />
-          </DramaRatingStars>
-        </DramaRating>
-        <DramaLinkWrapper>
-          <DramaLink>{detailLink} Details</DramaLink>
-        </DramaLinkWrapper>
-      </DramaCard>
+      <Zoom key={drama.title} center>
+        <DramaCard>
+          <DramaPicture src={drama.picture} />
+          <DramaTitle>{drama.title}</DramaTitle>
+          <DramaRating>
+            <DramaRatingText>my rating</DramaRatingText>
+            <DramaRatingStars>
+              <Star size="15px" fill={1 ? "gold" : "gray"} />
+              <Star size="15px" fill={1 ? "gold" : "gray"} />
+              <Star size="15px" fill={1 ? "gold" : "gray"} />
+              <Star size="15px" fill={1 ? "gold" : "gray"} />
+              <Star size="15px" fill={1 ? "gold" : "gray"} />
+            </DramaRatingStars>
+          </DramaRating>
+          <DramaLinkWrapper>
+            <DramaLink>{detailLink} Details</DramaLink>
+          </DramaLinkWrapper>
+        </DramaCard>
+      </Zoom>
     );
   });
   return (

@@ -1,7 +1,7 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-export const Button = styled.a`
-  text-decoration: none;
+export const Button = styled.button`
   border: none;
   border-radius: 50px;
   background: ${({ primary }) =>
@@ -14,7 +14,6 @@ export const Button = styled.a`
   transition: all 0.3s ease-in;
   cursor: pointer;
   font-size: 18px;
-  padding: 14px 48px;
 
   &:hover {
     background: ${({ primary }) =>
@@ -23,9 +22,16 @@ export const Button = styled.a`
       primary ? "var(--primary-color)" : "var(--white)"};
   }
 
-  @media screen and (max-width: 480px) {
-    padding: 8px 28px;
-    margin: 0.8px 0;
+  & > a {
+    display: block;
+    padding: 14px 48px;
+    text-decoration: none;
+    color: inherit;
+
+    @media screen and (max-width: 480px) {
+      padding: 8px 28px;
+      margin: 0.8px 0;
+    }
   }
 `;
 // 1 54 21

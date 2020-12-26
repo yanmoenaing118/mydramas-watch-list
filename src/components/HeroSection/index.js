@@ -1,5 +1,6 @@
 import React from "react";
 import { Fade } from "react-reveal";
+import { Link } from "react-router-dom";
 import { Button } from "../ButtonElements";
 
 import {
@@ -26,7 +27,7 @@ export default function HeroSection() {
         </HeroP>
         <HeroBtnWrapper>
           <Button primary big bigFont>
-            Go to Dramas
+            <Link to="/dramas/kdramas">Go to dramas</Link>
           </Button>
         </HeroBtnWrapper>
       </HeroContent>

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-const bgImage = require("./../../images/lar-1.jpg").default;
+const bgImage = require("./../../images/lar-1.jpeg").default;
 
 export const HeroContainer = styled.section`
   position: relative;

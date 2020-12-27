@@ -70,7 +70,7 @@ const kdramas = [
 
   {
     title: "Hotel Deluna",
-    picture: require("./../../images/memory.jpeg").default,
+    picture: require("./../../images/hotel_deluna.jpeg").default,
     rating: 5,
   },
 

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-const bgImage = require("./../../images/lar-1.jpeg").default;
+const bgImage = require("./../../images/lar.jpeg").default;
 
 export const HeroContainer = styled.section`
   position: relative;
@@ -47,6 +47,7 @@ export const HeroContent = styled.div`
 export const HeroH1 = styled.h1`
   font-size: 40px;
   margin-left: 24px;
+  max-width: 800px;
 
   @media screen and (max-width: 768px) {
     font-size: 32px;
@@ -60,6 +61,7 @@ export const HeroH1 = styled.h1`
 export const HeroP = styled.p`
   margin-top: 24px;
   margin-left: 24px;
+  max-width: 800px;
   font-size: 28px;
   position: relative;
   @media screen and (max-width: 768px) {

@@ -14,9 +14,26 @@ const cdramas = [
     picture: require("./../../images/pyhoms.jpeg").default,
     rating: 5,
   },
+
   {
     title: "Go Go Squid",
     picture: require("./../../images/gogosquid.jpeg").default,
+    rating: 5,
+  },
+  {
+    title: "Eternal Love of Dream",
+    picture: require("./../../images/elod.jpeg").default,
+    rating: 5,
+  },
+  {
+    title: "And The Winner is Love",
+    picture: require("./../../images/winner.jpeg").default,
+    rating: 5,
+  },
+
+  {
+    title: "The Chang'an Youth",
+    picture: require("./../../images/changan_youth.jpeg").default,
     rating: 5,
   },
 
